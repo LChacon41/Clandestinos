@@ -1,0 +1,59 @@
+<!-- Estadisticas --->
+<div class="row" id="estadisticas">
+                
+    <div class="col-12">
+    
+        <div class="card" id="statsCard">
+          <div class="card-body text-center d-flex flex-column">
+            <div class="card-title">
+                    <img class="img-fluid pageImg" src="/assets/statsWhite.png" />
+                    <h4 class="white">Mis estadísticas</h4>
+            </div> 
+            <div class="container">
+                <canvas id="statChart"></canvas>
+                <div class="row justify-content-between">
+                    <div class="col col-btn-stats">
+                        <button data-type=1 id="statBtn1" class="btn-stats disabled" disabled="true">Singles</button>
+                    </div>
+                    <div class="col col-btn-stats">
+                        <button data-type=2 id="statBtn2" class="btn-stats">Dobles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card esconder" id="extraStats">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card dashC" id="torneoCard">
+                                 <!--<img id="shareImg" src="/assets/share.png">-->
+                                <div class="card-body text-center">
+                                    <div class="row">
+                                            <span class="">Torneos</span>
+                                            
+                                    </div>
+                                    <div class="row">
+                                        <span class="verde" id="torneosNum"></span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card dashC">
+                                <div class="card-body text-center">
+                                    <div class="row">
+                                        <span class="">Puntos</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="verde" id="puntosNum"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

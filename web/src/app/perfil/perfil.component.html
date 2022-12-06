@@ -1,0 +1,73 @@
+<!-- PERFIL --->
+<div class="row" id="perfil">
+                
+    <div class="col-12">
+    
+        <div class="card">
+          <div class="card-body ">
+                <div class="row text-center card-title justify-content-center">
+                    <div class="col">
+                            <img class="img-fluid pageImg" src="/assets/perfil.png">
+                            <h3>Mi perfil</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div id="profile-container">
+                           <img id="profileImage" object-fit=cover src="/assets/ppT.png" />
+                        </div>
+                        <form id="data" method="post" enctype="multipart/form-data">
+                            <input id="imageUpload" type="file" 
+                               name="profile_photo" placeholder="Photo" accept="capture=camera,image/*">
+                        </form>
+                    </div>
+              </div>
+                
+                <div class="container">
+                
+                    <div class="row">
+
+                        <label for="nombre" class="form-label"><b>Nombre</b></label>
+                        <div class="input-group mb-3">
+                             <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <label for="edad" class="form-label"><b>Edad</b></label>
+                        <div class="input-group mb-3">
+                          <input type="number" class="form-control" id="edad">
+                        </div>
+                        <label for="modes" class="form-label"><b>Modalidades de juego</b></label>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="singles">
+                            <label class="form-check-label" for="singles">Singles</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="dobles">
+                            <label class="form-check-label" for="dobles">Dobles</label>
+                        </div>
+                        <label for="manos" class="form-label"><b>Mano</b></label>
+                        <div class="form-check">
+                            <img class="img-fluid pageImg" src="/assets/tennisZurdo.png" />
+                            <input class="form-check-input" name="manos" type="radio" id="zurdo" value="zurdo">
+                            <label class="form-check-label" for="zurdo">
+                            Zurdo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <img class="img-fluid pageImg" src="/assets/tennisDiestro.png" />
+                            <input class="form-check-input" name="manos" type="radio" id="diestro" value="diestro" checked>
+                            <label class="form-check-label" for="diestro">
+                            Diestro
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-green" id="profileSave">Guardar</button>
+                        </div>
+                    </div>
+                
+                </div>
+            
+                <!--<canvas id="myChart" width="400" height="400"></canvas>-->
+          </div>
+        </div>
+    
+    </div>
+
+</div>
